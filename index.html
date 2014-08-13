@@ -14,14 +14,22 @@
   .view-condensed {margin: 0px;}
   	
   .sched-container {  display:block;  width:100%;  min-height:200px;  background:#fefac7;  }
+  .sched-container:nth-child(odd):hover {background:#C5C5C5;}
+
   
   .sched-title {  display:block; margin:1em;  height:2em;  text-align:center;  background: #A5A5A5;  }
   .sched-row{display:block; background:#AA0000; opacity:0.5;}
   .sched-row:hover{opacity:1;}
   .sched-route, .sched-place, .sched-t1, .sched-t2, .sched-t3 {float:left;}
-  .sched-route {width:80px;}
-  .sched-place {width:30px;}
-  .sched-t1, .sched-t2, .sched-t3 {width:130px;}
+  .sched-route {}
+  .sched-place {}
+  .sched-t1, .sched-t2, .sched-t3 {}
+  .sched-row:nth-child(0) {width:80px;}
+  .sched-row:nth-child(1) {width:30px;}
+  .sched-row:nth-child(2),.sched-row:nth-child(4),.sched-row:nth-child(5) {width:80px;}
+  .sched-row:nth-child(3),.sched-row:nth-child(5) {width:75px;}
+
+  
   
 </style>
   </head>
@@ -64,7 +72,7 @@ $ git checkout gh-pages
     
     
       <div class="sched-row">
-        <div class="sched-route"><small>route</small></div>
+        <div class="sched-route">route</div>
         <div class="sched-place"><small>N/S</small></div>
         <div class="sched-t1">7pm</div>
         <div class="sched-t2">7:30pm</div>
