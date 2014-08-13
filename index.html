@@ -1,6 +1,4 @@
-<!doctype html>
-<html>
-  <head>
+<html><head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Reston-work by gloverd</title>
@@ -11,6 +9,34 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+<style>
+  	.view-condensed {
+		margin: 0px;
+	}
+  	
+  .sched-container {
+  display:block;
+  width:100%;
+  min-height:200px;
+  background:#fefac7;
+  }
+  
+  .sched-title {
+  display:block;
+  margin:1em;
+  height:2em;
+  text-align:center;
+  background: #A5A5A5;
+  }
+  .sched-row{display:block; background:#AA0000; opacity:0.5;}
+  .sched-row:hover{opacity:1;}
+  .sched-route, .sched-place, .sched-t1, .sched-t2, .sched-t3 {float:left;}
+  .sched-route {width:80px;}
+  .sched-place {width:30px;}
+  .sched-t1, .sched-t2, .sched-t3 {width:130px;}
+  
+</style>
   </head>
   <body>
     <div class="wrapper">
@@ -24,10 +50,7 @@
           <li><a href="https://gloverd.github.io/reston-work/#">Schedule for <strong>1pm-10pm</strong></a></li>
         </ul>
 
-        <p class="view"><a href="http://www.fairfaxcounty.gov/connector/routes/reston.htm">List of Routes in Reston <small>fairfax county connector</small></a></p>
-        <p class="view"><a href="http://www.fairfaxcounty.gov/connector/pdf/map/systemmap.pdf">Full map of Routes <small>pdf with all listed</small></a></p>
-        <p class="view"><a href="http://silverlinemetro.com/wiehle-reston-east/">Wiehle-Reston Metro Stop <small>Silver Line Metro</small></a></p>
-        <p class="view"><a href="http://www.fairfaxcounty.gov/fcdot/bike/wiehlebikeroom.htm">Wiehle-Reston Bike Room <small>For Commuters</small></a></p>
+    
         <!--<p class="view"><a href="https://gloverd.github.io/reston-work"> <small></small></a></p-->
 
       </header>
@@ -49,10 +72,37 @@ $ git checkout gh-pages
 <h3>
 <a name="shuttle" class="anchor" href="#shuttle"><span class="octicon octicon-link"></span></a>Project Shuttle</h3>
 
-<p>In order to commute from the Silver Line Metro to the Reston office, there is a <code>Project Shuttle</code> that can be taken for 8am-5pm work. The Shuttle will also stop at the farther parking lot, in roughly a 20 minute loop. Between 8-4:30 the shuttle will continue to go only between the parking lot and the Reston office.</p>
+<p>In order to commute from the Silver Line Metro to the Reston office, there is a <code>Project Shuttle</code> that can be taken for 8am-5pm work. The Shuttle will also stop at the farther parking lot, in roughly a 20 minute loop. Between 8-4:30 the shuttle will continue to go only between the parking lot and the Reston office.</p><div class="sched-container">
+  <div class="sched-title">METRO TO OFFICE</div>
+    
+    
+      <div class="sched-row">
+        <div class="sched-route"></div>
+        <div class="sched-place"></div>
+        <div class="sched-t1">7pm</div>
+        <div class="sched-t2">7:30pm</div>
+        <div class="sched-t3">8pm</div>
+    </div>
+    <div class="sched-row">
+        <div class="sched-route">951</div>
+        <div class="sched-place">N</div>
+        <div class="sched-t1">7pm</div>
+        <div class="sched-t2">7:30pm</div>
+        <div class="sched-t3">8pm</div>
+    </div>
+    <div class="sched-row">
+        <div class="sched-route">951</div>
+        <div class="sched-place">N</div>
+        <div class="sched-t1">asdfasdf</div>
+        <div class="sched-t2">7:30pm</div>
+        <div class="sched-t3">8pm</div>
+    </div>
+  
+  </div>
 
-<pre>
-  Morning: (from Metro Station)
+
+
+<pre>  Morning: (from Metro Station)
   7:00am  7:20am  7:40am
   
   Afternoon: (from Reston Office)
@@ -74,12 +124,26 @@ $ git checkout gh-pages
 
 <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
+
+
       <footer>
-        <p>This project is maintained by <a href="https://github.com/gloverd">gloverd</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+
+    <p class="view-condensed"><a href="http://www.fairfaxcounty.gov/connector/routes/reston.htm">List of Routes in Reston <small>fairfax county connector</small></a></p>
+        <p class="view-condensed" style="
+    margin-bottom: 0px;
+"><a href="http://www.fairfaxcounty.gov/connector/pdf/map/systemmap.pdf">Full map of Routes <small>pdf with all listed</small></a></p>
+        <p class="view-condensed"><a href="http://silverlinemetro.com/wiehle-reston-east/">Wiehle-Reston Metro Stop <small>Silver Line Metro</small></a></p>
+        <p class="view-condensed"><a href="http://www.fairfaxcounty.gov/fcdot/bike/wiehlebikeroom.htm">Wiehle-Reston Bike Room <small>For Commuters</small></a></p>
+
+        <p class="view-condensed">This project is maintained by <a href="https://github.com/gloverd">gloverd</a></p>
+        <p view="view-condensed"><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+
+
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
     
-  </body>
-</html>
+  
+
+</body></html>
