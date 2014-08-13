@@ -18,11 +18,11 @@
   
   .sched-title {  display:block; margin:1em;  height:2em;  text-align:center;  background: #A5A5A5;  }
 
-  table, tr, td {border:0;}
-  tr td:not(:empty) {background:#FFFF66;}
-  tr td.t10 {background:#3399FF;}
-  tr td.t12 {backgroundd:#66FF66;}
-  tr:nth-child(odd) {background:#C5C5C5;}
+  table, tr, td {border:0; opacity:1.0;}
+  tr td.t08:not(:empty) {background:#FFFF66;}
+  tr td.t10:not(:empty) {background:#3399FF;}
+  tr td.t12:not(:empty) {backgroundd:#66FF66;}
+  tr:nth-child(odd) {opacity:0.8;}
 
   tr:hover {background:#B5B5B5;}
   tr:active {background:#A5A5A5;}
@@ -76,37 +76,37 @@ $ git checkout gh-pages
       <td>7:30am</td><td></td>
       <td>8am</td>
     </tr>
-    <tr>
+    <tr class="t08">
       <td>951</td><td>N</td>		
       <td>06:59</td><td></td>
       <td>07:29</td><td></td>
       <td>07:59</td>
     </tr>
-    <tr>
+    <tr class="t08">
       <td>926</td><td>S</td>		
       <td>06:55</td><td></td>
       <td>07:25</td><td></td>
       <td>07:55</td>
     </tr>
-    <tr>
+    <tr class="t08">
       <td>RIBS 1</td><td>N</td>		
       <td>07:01</td><td></td>
       <td>07:29</td><td></td>
       <td>07:59</td>
     </tr>
-    <tr>
+    <tr class="t08">
       <td>585</td><td>S</td>		
       <td>07:05</td><td></td>
       <td>07:35</td><td></td>
       <td></td>
     </tr>
-    <tr>
+    <tr class="t08">
       <td>985</td><td>S</td>		
       <td>06:57</td><td>717</td>
       <td></td><td>740</td>
       <td>08:02</td>
     </tr>
-    <tr>
+    <tr class="t08">
       <td>Shuttle</td><td>N</td>		
       <td></td><td>07:20</td>
       <td></td><td>07:40</td>
