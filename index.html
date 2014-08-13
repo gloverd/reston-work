@@ -19,13 +19,11 @@
   .sched-title {  display:block; margin:1em;  height:2em;  text-align:center;  background: #A5A5A5;  }
 
   table, tr, td {border:0; opacity:1.0;}
-  tr td.t08:not(:empty) {background:#FFFF66;}
-  tr td.t10:not(:empty) {background:#3399FF;}
+  tr td .t08:not(:empty) {background:#FFFF66;}
+  tr td:not(:empty) .t10 {background:#3399FF;}
   tr td.t12:not(:empty) {backgroundd:#66FF66;}
   tr:nth-child(odd) {opacity:0.8;}
 
-  tr:hover {background:#B5B5B5;}
-  tr:active {background:#A5A5A5;}
   tr td:nth-child(0) {width:80px;}
   tr td:nth-child(1) {width:30px;}
   tr.time-header {background:#000; color:#FFF;}
