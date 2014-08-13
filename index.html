@@ -18,11 +18,12 @@
   
   .sched-title {  display:block; margin:1em;  height:2em;  text-align:center;  background: #A5A5A5;  }
 
-  table, tr, td {border:0; opacity:1.0;}
-  tr.t08 td:not(:empty) {background:#FFFF66;}
-  tr.t10 td:not(:empty) {background:#3399FF;}
-  tr.t12 td:not(:empty) {backgroundd:#66FF66;}
-  tr:nth-child(odd) {opacity:0.8;}
+  table, tr, td {border:0; opacity:0.8; color:#FFF;}
+  tr.t08 td:nth-child(n+3):not(:empty) {background:#FFFF66;}
+  tr.t10 td:nth-child(n+4):not(:empty) {background:#3399FF;}
+  tr.t12 td:nth-child(n+3):not(:empty) {background:#66FF66;}
+  tr:nth-child(odd) {opacity:0.9;}
+  tr:hover {opacity:1.0};
 
   tr td:nth-child(0) {width:80px;}
   tr td:nth-child(1) {width:30px;}
