@@ -21,15 +21,8 @@
   .sched-row:hover{opacity:1;}
   .sched-row:nth-child(odd) .sched:hover {background:#00FF00;}
 
-  .sched-route, .sched-place, .sched, .sched-t1, .sched-t2, .sched-t3 {float:left;display:block;}
-  .sched-route {}
-  .sched-place {}
-  .sched-t1, .sched-t2, .sched-t3 {}
-  .sched:nth-child(0) {width:80px;}
-  .sched:nth-child(1) {width:30px;}
-  .sched:nth-child(2),.sched:nth-child(4),.sched:nth-child(5) {width:80px;}
-  .sched:nth-child(3),.sched:nth-child(5) {width:75px;}
-
+    table, th, td {border:0;}
+    
   
   
 </style>
@@ -71,33 +64,29 @@ $ git checkout gh-pages
 <p>In order to commute from the Silver Line Metro to the Reston office, there is a <code>Project Shuttle</code> that can be taken for 8am-5pm work. The Shuttle will also stop at the farther parking lot, in roughly a 20 minute loop. Between 8-4:30 the shuttle will continue to go only between the parking lot and the Reston office.</p><div class="sched-container">
   <div class="sched-title">METRO TO OFFICE</div>
     
+    <table style="width:500px">
+    <tr>
+      <td></td>
+      <td></td>		
+      <td>7am</td>
+      <td></td>
+      <td>7:30am</td>
+      <td></td>
+      <td>8am</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>		
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>		
+      <td>80</td>
+    </tr>
+    </table>
     
-      <div class="sched-row">
-        <div class="sched-route">route</div>
-        <div class="sched-place"><small>N/S</small></div>
-        <div class="sched">7pm</div>
-        <div class="sched"> </div>
-        <div class="sched">7:30pm</div>
-        <div class="sched"> </div>
-        <div class="sched">8pm</div>
-    </div>
-    <div class="sched-row">
-        <div class="sched-route">951</div>
-        <div class="sched-place">N</div>
-        <div class="sched">06:59</div>
-        <div class="sched"> </div>
-        <div class="sched">07:29</div>
-        <div class="sched"> </div>
-        <div class="sched">07:59</div>
-    </div>
-    <div class="sched-row">
-        <div class="sched-route">951</div>
-        <div class="sched-place">N</div>
-        <div class="sched-t1">06:55</div>
-        <div class="sched-t2">07:25</div>
-        <div class="sched-t3">07:55</div>
-    </div>
-  
+
   </div>
 
 
