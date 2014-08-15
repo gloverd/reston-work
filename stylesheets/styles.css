@@ -244,6 +244,11 @@ footer {
   header ul {
     display:none;
   }
+  
+  table {
+    width: 200px;
+  }
+  
 }
 
 @media print {
