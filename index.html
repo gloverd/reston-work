@@ -61,13 +61,15 @@ function startTime() {
     
     var curwidth = document.getElementById('timeTable').clientWidth;
 
-    if (curwidth<450) {
-        
-        
-    }
-
     var x_left = 98;
     var x_right = 500;
+
+
+    if (curwidth<450) {
+        x_left = 30;
+        x_right = curwidth;
+    }
+
     var x_cur = ((x_right-x_left)/60)*m;
 
     if (h==7 || h==10 || h==12) {timeBar = 0};
