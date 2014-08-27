@@ -191,7 +191,9 @@ footer {
   }
   
     table {
-    width: 200px;
+    max-width: 200px;
+    overflow:hidden;
+    overflow-x: scroll
   }
   
   header, section, footer {
