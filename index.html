@@ -60,21 +60,22 @@ function startTime() {
     var t = setTimeout(function(){startTime()},500);
     
     var curwidth = document.getElementById('timeTable').clientWidth;
+    var curheight = document.getElementById('timeTable').clientHeight;
+
+    if (h==7 || h==10 || h==12) {timeBar = 0};
+    if (h == 16 || h==17 || h==20 || h==22) {timeBar = 1};
 
     var x_left = 98;
     var x_right = 500;
 
-
     if (curwidth<450) {
         x_left = 30;
         x_right = curwidth;
+        document.getElementById(timeSlot[timeBar]).style.height = curheight+"px";
     }
 
     var x_cur = ((x_right-x_left)/60)*m;
 
-    if (h==7 || h==10 || h==12) {timeBar = 0};
-    if (h == 16 || h==17 || h==20 || h==22) {timeBar = 1};
-    
     document.getElementById(timeSlot[timeBar]).style.display = "block";
     document.getElementById(timeSlot[timeBar]).style.left = (x_left+x_cur)+"px";
 }
