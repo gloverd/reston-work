@@ -47,7 +47,8 @@ function startTime() {
 
     if (h==7 || h==10 || h==12) {timeBar = 0};
     if (h==17 || h==20 || h==22) {timeBar = 1};
-
+    
+    document.getElementById(timeSlot[timeBar]).style.display = "block";
     document.getElementById(timeSlot[timeBar]).style.left = x_cur+"px";
 }
 
