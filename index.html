@@ -58,13 +58,15 @@ function startTime() {
     s = checkTime(s);
     //document.getElementById('txt').innerHTML = h+":"+m+":"+s;
     var t = setTimeout(function(){startTime()},500);
+    
+    var curwidth = document.getElementById('timeTable').clientWidth;
 
     var x_left = 98;
     var x_right = 500;
     var x_cur = ((x_right-x_left)/60)*m;
 
     if (h==7 || h==10 || h==12) {timeBar = 0};
-    if (h==17 || h==20 || h==22) {timeBar = 1};
+    if (h == 16 || h==17 || h==20 || h==22) {timeBar = 1};
     
     document.getElementById(timeSlot[timeBar]).style.display = "block";
     document.getElementById(timeSlot[timeBar]).style.left = (x_left+x_cur)+"px";
@@ -129,7 +131,7 @@ function checkTime(i) {
 <h3><a name="from" class="anchor" href="#from" style="text-align:center;"><span class="octicon octicon-link"></span></a>Bus From Metro</h3>
 
 <div style="position:relative;">
-    <table style="width:100%; max-width:500px">
+    <table id="timeTable" style="width:100%; max-width:500px">
     <tr class="time-header">
       <td></td><td></td>		
       <td>7am</td><td></td>
