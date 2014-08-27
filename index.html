@@ -61,6 +61,11 @@ function startTime() {
     
     var curwidth = document.getElementById('timeTable').clientWidth;
 
+    if (curwidth<450) {
+        
+        
+    }
+
     var x_left = 98;
     var x_right = 500;
     var x_cur = ((x_right-x_left)/60)*m;
@@ -304,7 +309,7 @@ function checkTime(i) {
     </tr>
     </table>
     
-    <div id="timeBar1" style="width:10px; height:50px; padding:10px; background:#00FF00; position:absolute; left:0px; display:none;"></div>
+    <div id="timeBar1" style="width:5px; height:350px; padding:5px; background-color:rgba(255, 10, 10, 0.8); position:absolute; display:none; top:0px;"></div>
 </div>
 
 <p>The pickup spots are listed in the table below. The majority of busses also drop off either at the <code>B</code> site, or infront of the Office. The stops currently do not have updated signage, but the signs indicate the correct bus stops.</p>
