@@ -41,15 +41,15 @@ function startTime() {
     //document.getElementById('txt').innerHTML = h+":"+m+":"+s;
     var t = setTimeout(function(){startTime()},500);
 
-    var x_left = 0;
+    var x_left = 98;
     var x_right = 500;
-    var x_cur = ((x_right-x_left)/60)*s;
+    var x_cur = ((x_right-x_left)/60)*m;
 
     if (h==7 || h==10 || h==12) {timeBar = 0};
     if (h==17 || h==20 || h==22) {timeBar = 1};
     
     document.getElementById(timeSlot[timeBar]).style.display = "block";
-    document.getElementById(timeSlot[timeBar]).style.left = x_cur+"px";
+    document.getElementById(timeSlot[timeBar]).style.left = (x_left+x_cur)+"px";
 }
 
 function checkTime(i) {
