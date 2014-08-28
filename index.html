@@ -83,7 +83,7 @@ function startTime() {
     }
 
     var x_cur = ((x_right-x_left)/60)*s;
-    x_cur = x_cur - x_left;
+    x_cur = x_cur + x_left;
 
     document.getElementById(timeSlot[timeBar]).style.display = "block";
     document.getElementById(timeSlot[timeBar]).style.left = x_cur+"px";}
