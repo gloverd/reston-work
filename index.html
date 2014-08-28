@@ -21,7 +21,7 @@
   tr.t08 td:nth-child(n+3):not(:empty) {background:#FFFF66;}
   tr.t10 td:nth-child(n+3):not(:empty) {background:#3399FF;}
   tr.t12 td:nth-child(n+3):not(:empty) {background:#66FF66;}
-  tr:nth-child(odd) {opacity:0.9;}
+  tr:nth-child(odd) {opacity:1;}
   tr:hover {opacity:0.6;}
 
   tr td:nth-child(0) {width:80px;}
@@ -29,6 +29,11 @@
   tr.time-header {opacity:1;}
   
   table {width:100%; max-width:500px;}
+  
+  .SlideBar {width:5px;
+  height:350px; padding:5px;
+  background-color:rgba(255, 10, 10, 0.4);
+  position:absolute; display:none; top:0px;}
   
   @media print, screen and (max-width: 960px) {
     tr td, table {width: auto;min-width: 0;display: table;}
@@ -69,7 +74,7 @@ function startTime() {
     var x_right = 500;
 
     if (curwidth<450) {
-        x_left = 30;
+        x_left = 64;
         x_right = curwidth;
         document.getElementById(timeSlot[timeBar]).style.height = curheight+"px";
     }
@@ -226,7 +231,7 @@ function checkTime(i) {
     </tr>
     </table>
     
-    <div id="timeBar" style="width:5px; height:350px; padding:5px; background-color:rgba(255, 10, 10, 0.4); position:absolute; display:none; top:0px;"></div>
+    <div id="timeBar" class="SlideBar"></div>
 </div>
 
   <p>The Pickup sites listed in the second column are the North/South exit of the Station. The appropriate bus will arrive in the bus bays. With the exception of the RIBS 1 bus which picks up outside of the station itself, marked by the red T on the map below.</p>
@@ -312,7 +317,7 @@ function checkTime(i) {
     </tr>
     </table>
     
-    <div id="timeBar1" style="width:5px; height:350px; padding:5px; background-color:rgba(255, 10, 10, 0.4); position:absolute; display:none; top:0px;"></div>
+    <div id="timeBar1" class="SlideBar"></div>
 </div>
 
 <p>The pickup spots are listed in the table below. The majority of busses also drop off either at the <code>B</code> site, or infront of the Office. The stops currently do not have updated signage, but the signs indicate the correct bus stops.</p>
