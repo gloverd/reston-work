@@ -85,7 +85,8 @@ function startTime() {
     var x_cur = ((x_right-x_left)/60)*m;
 
     document.getElementById(timeSlot[timeBar]).style.display = "block";
-    document.getElementById(timeSlot[timeBar]).style.left = (x_left+x_cur)+"px";
+    document.getElementById(timeSlot[timeBar]).style.left = x_cur+"px";
+    document.getElementById(timeSlot[timeBar]).stlye.margin-left = x_left+"px";
 }
 
 function checkTime(i) {
