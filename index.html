@@ -30,8 +30,8 @@
   
   table {width:100%; max-width:500px;}
   
-  .SlideBar {width:5px;height:300px; padding:5px;background-color:rgba(255, 10, 10, 0.4);
-  position:absolute; display:none; top:20px;}
+  .SlideBar {width:5px;height:250px; padding:5px;background-color:rgba(255, 10, 10, 0.4);
+  position:absolute; display:none; top:25px;}
   
   @media print, screen and (max-width: 960px) {
     tr td, table {width: auto;min-width: 0;display: table;}
@@ -78,7 +78,7 @@ function startTime() {
     if (curwidth<450) {
         x_left = 60;
         x_right = curwidth-35; //account for padding
-        curheight = curheight - 60;
+        curheight = curheight - 100;
         document.getElementById(timeSlot[timeBar]).style.height = curheight+"px";
     }
 
