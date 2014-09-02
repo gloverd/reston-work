@@ -5,98 +5,11 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/restonStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-<style>
-  .view-condensed {margin: 0px;}
-
-  .sched-title {display:block; margin:1em;  height:2em;  text-align:center;  background: #A5A5A5;  }
-
-  body {overflow-x:hidden;}
-
-  table, tr, td {border:0; opacity:1; color:#000;}
-  tr.t08 td:nth-child(n+3):not(:empty) {background:#FFFF66;}
-  tr.t10 td:nth-child(n+3):not(:empty) {background:#3399FF;}
-  tr.t12 td:nth-child(n+3):not(:empty) {background:#66FF66;}
-  tr:nth-child(odd) {opacity:1;}
-  tr:hover {opacity:0.6;}
-
-  tr td:nth-child(0) {width:80px;}
-  tr td:nth-child(1) {width:30px;}
-  tr.time-header {opacity:1;}
-  
-  table {width:100%; max-width:500px;}
-  
-  .SlideBar {width:5px;height:265px; padding:5px;background-color:rgba(255, 10, 10, 0.4);
-  position:absolute; display:none; top:25px;}
-  
-  @media print, screen and (max-width: 960px) {
-    tr td, table {width: auto;min-width: 0;display: table;}
-    table {width:100%; max-width:500px;}
-  }
-  @media print, screen and (max-width: 480px) {
-    tr td, table {display: table;}
-    tr td  {width:auto; text-align:center; padding:5px;}
-    tr td:nth-child(0) {text-align:left;}
-    tr td:nth-child(1) {text-align:left;}
-    
-    table {width:80%; max-width:270px;margin-left:-23px; margin-right:0px;padding-right:0px;}
-  }
-
-  
-</style>
-
-<script>
-function startTime() {
-    var timeSlot = ["timeBar","timeBar1"];
-    var timeBar;
-    var today=new Date();
-    var h=today.getHours();
-    var m=today.getMinutes();
-    var s=today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    //document.getElementById('txt').innerHTML = h+":"+m+":"+s;
-    var t = setTimeout(function(){startTime()},500);
-    
-    var curwidth = document.getElementById('timeTable').clientWidth;
-    var curheight = document.getElementById('timeTable').clientHeight;
-
-    if (h==7 || h==10 || h==12) {timeBar = 0};
-    if (h == 16 || h==17 || h==20 || h==22) {timeBar = 1};
-
-    //just get it going all the time for now
-    //timeBar = 0;
-
-    var x_left = 98;
-    var x_right = 500;
-
-
-    if (curwidth<450) {
-        x_left = 60;
-        x_right = curwidth-35; //account for padding
-        curheight = curheight - 97;
-        document.getElementById(timeSlot[timeBar]).style.top = "29px";
-        
-        document.getElementById(timeSlot[timeBar]).style.height = curheight+"px";
-    }
-
-    var x_cur = ((x_right-x_left)/60)*m;
-    x_cur = x_cur + x_left;
-
-    document.getElementById(timeSlot[timeBar]).style.display = "block";
-    document.getElementById(timeSlot[timeBar]).style.left = x_cur+"px";}
-
-function checkTime(i) {
-    if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}
-
-
-</script>
 
   </head>
   <body onload="startTime()">
@@ -349,7 +262,6 @@ function checkTime(i) {
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/timebar.js"></script>
     
-  
-
 </body></html>
