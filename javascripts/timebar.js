@@ -16,8 +16,6 @@ function startTime() {
     if (h==7 || h==10 || h==12) {timeBar = 0};
     if (h == 16 || h==17 || h==20 || h==22) {timeBar = 1};
     
-    timeBar = 0;
-
     //just get it going all the time for now
     //timeBar = 0;
 
