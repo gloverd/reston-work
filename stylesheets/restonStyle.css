@@ -18,6 +18,8 @@
   tr td {background:#ECECEC;}
   tr.time-header td {background:#FFF;}
   tr td:nth-child(3) {background:#D4D4D4;}
+  tr td:nth-child(3):empty {background:#C4C4C4;}
+
 
   
   tr.time-header {opacity:1; background:#FFFFFF;}
