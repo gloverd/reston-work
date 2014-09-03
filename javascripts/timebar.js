@@ -35,8 +35,12 @@ function startTime() {
     var x_cur = ((x_right-x_left)/60)*m;
     x_cur = x_cur + x_left;
 
+    document.getElementById('timeClock').innerHTML = h+":"+m+":"+s
+    document.getElementById(timeSlot[timeBar]).style.display = "block";
     document.getElementById(timeSlot[timeBar]).style.display = "block";
     document.getElementById(timeSlot[timeBar]).style.left = x_cur+"px";}
+    document.getElementById('timeClock').style.left = x_cur+"px";}
+
 
 function checkTime(i) {
     if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
